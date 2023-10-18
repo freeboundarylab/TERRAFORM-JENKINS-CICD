@@ -1,8 +1,9 @@
 terraform {
   backend "s3" {
     bucket         = "freeboundarylab-lulgabc-learning"
-    key            = "my-terraform-environment/main"
+    key            = "state/terraform.tfstate"
     region         = "eu-west-3"
-    dynamodb_table = "learning"
+    dynamodb_table = "terraform"
+    encrypt        = true
   }
 }

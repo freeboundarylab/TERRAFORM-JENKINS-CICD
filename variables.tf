@@ -3,7 +3,7 @@ variable "aws_region" {
   default     = "eu-west-3"
 }
 variable "key_name" {
-  description = " SSH keys to connect to ec2 instance"
+  description = "SSH keys to connect to ec2 instance"
   default     = "Mumbai"
 }
 variable "instance_type" {
