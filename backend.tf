@@ -3,7 +3,7 @@ terraform {
     bucket         = "freeboundarylab-lulgabc-learning"
     key            = "terraform.tfstate"
     region         = "eu-west-3"
-    shared_credentials_files  = ["%USERPROFILE%/.aws/credentials"]
+    // shared_credentials_files  = ["%USERPROFILE%/.aws/credentials"]
     dynamodb_table = "terraform"
     encrypt        = true
   }
